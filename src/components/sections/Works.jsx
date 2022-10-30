@@ -61,6 +61,7 @@ function Works() {
                 href={work.urlPath}
                 className="border-dark-bg border-2 rounded-xl p-[24px] work-item relative"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <div className="rounded-lg work-img mb-4">
                   <img
@@ -71,7 +72,7 @@ function Works() {
                 </div>
                 <p className="text-xs mb-1">{work.type}</p>
                 <h4>{work.title}</h4>
-                <a href={work.gitPath} className="git text-lg" target="_blank">
+                <a href={work.gitPath} className="git text-lg" target="_blank" rel="noopener noreferrer">
                   <FiGithub />
                 </a>
               </a>
