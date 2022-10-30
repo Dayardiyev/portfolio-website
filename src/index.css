@@ -23,7 +23,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--dark-text);
-  background-image: url("https://dayardiyev.github.io/portfolio/img/background.jpg");
+  background-image: url("/src/assets/background.jpg");
   background-repeat: no-repeat;
   background-position: fixed;
   background-size: cover;
