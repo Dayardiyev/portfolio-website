@@ -19,7 +19,7 @@ function Contact() {
               <br /> design work or partnerships.
             </h3>
           </div>
-          <form action="https://formsubmit.co/your@email.com" method="POST">
+          <form action="https://formsubmit.co/dayardiev@gmail.com" method="POST">
             <div className="w-full mt-10 mb-8 flex flex-col relative">
               <input
                 type="text"
