@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900);
+@layer base {
+  :root {
+    --primary-bg: #111111;
+    --dark-bg: #212425;
+    --dark-text: #A6A6A6;
+  }
+}
+
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--dark-text);
+  background-image: url("https://dayardiyev.github.io/portfolio/img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: var(--dark-bg);
+  overflow: overlay;
+}
+
+h1,h2,h3,h4{
+  color: #fff;
+}
+
+.header a.active{
+  background-image: linear-gradient(to right, rgb(250, 82, 82), rgb(221, 36, 118));
+  color: white;
+}
+
+nav{
+  display: none;
+}
+
+nav.active{
+  display: block;
+}
+
+nav ul li a.active{
+  color: #FA5252;
+}
+.roboto-font{
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.purple{
+  color: #D566FF;
+}
+
+.light-blue{
+  color: #269FFF;
+}
+
+.grey-text{
+  color: var(--dark-text);
+}
+
+.about-info{
+  line-height: 2;
+}
+
+.overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: red;
+}
+
+.work-item:hover img{
+  opacity: 100;
+}
+
+
+.work-item:first-child .work-img{
+  background: url("assets/works/xbox.png");
+  background-size: cover;
+}
+
+.work-item:nth-child(2) .work-img{
+  background: url("assets/works/apple-watch.png");
+  background-size: cover;
+}
+
+.work-item:nth-child(3) .work-img{
+  background: url("assets/works/movie-api.png");
+  background-size: cover;
+}
+
+.work-item:nth-child(4) .work-img{
+  background: url("assets/works/frostauto.png");
+  background-size: cover;
+}
+
+.work-item:nth-child(5) .work-img{
+  background: url("assets/works/github-api.png");
+  background-size: cover;
+}
+
+.work-item:nth-child(6) .work-img{
+  background: url("assets/works/clock.png");
+  background-size: cover;
+}
+
+.git{
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  opacity: 0;
+  transition: .2s all;
+}
+
+.git:hover{
+  color: white;
+}
+
+.work-item:hover .git{
+  opacity: 1;
+}
+
+input, textarea{
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-family: "Poppins";
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--dark-bg);
+}
+
+input:focus, textarea:focus{
+  outline: none;
+}
