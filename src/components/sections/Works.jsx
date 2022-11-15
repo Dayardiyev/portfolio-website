@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import { FiGithub } from "react-icons/fi";
 import Animate from "../Animate";
 
@@ -47,6 +49,11 @@ const worksJson = [
 ];
 
 function Works() {
+
+  useEffect(() => {
+    document.title = 'Works - Dayardiyev Alisher'
+  })
+
   return (
     <div className="bg-primary-bg lg:rounded-2xl md:p-12 p-6">
       <Animate>

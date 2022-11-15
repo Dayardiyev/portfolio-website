@@ -1,7 +1,14 @@
+import { useEffect } from 'react';
+
 import { HiOutlineAcademicCap, HiOutlineBriefcase } from "react-icons/hi";
 import Animate from "../Animate";
 
 function Resume() {
+
+  useEffect(() => {
+    document.title = 'Resume - Dayardiyev Alisher'
+  })
+
   return (
     <>
       <div className="bg-primary-bg lg:rounded-t-2xl md:p-12 p-6">

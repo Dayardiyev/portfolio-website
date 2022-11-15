@@ -1,9 +1,16 @@
+import { useEffect } from 'react';
+
 import { BsFillGearFill } from "react-icons/bs";
 import { HiOutlineCode } from "react-icons/hi";
 import Sidebar from "../Sidebar";
 import Animate from "../Animate";
 
 function About() {
+
+  useEffect(() => {
+    document.title = 'About - Dayardiyev Alisher'
+  })
+
   return (
     <>
       <div className="block lg:hidden">

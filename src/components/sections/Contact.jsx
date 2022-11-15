@@ -1,6 +1,21 @@
+import { useState, useEffect } from "react";
 import Animate from "../Animate";
 
 function Contact() {
+  const [name, setName] = useState(null);
+  const [email, setEmail] = useState(null);
+  const [message, setMessage] = useState(null);
+
+  const handleSubmit = () => {
+    setName(null);
+    setEmail(null);
+    setMessage(null);
+  };
+
+  useEffect(() => {
+    document.title = 'Contact - Dayardiyev Alisher'
+  })
+
   return (
     <div className="bg-primary-bg lg:rounded-2xl md:p-12 p-6 w-full">
       <Animate>
@@ -19,7 +34,11 @@ function Contact() {
               <br /> design work or partnerships.
             </h3>
           </div>
-          <form action="https://formsubmit.co/dayardiev@gmail.com" method="POST">
+          <form
+            action="https://formsubmit.co/dayardiev@gmail.com"
+            method="POST"
+            onSubmit={handleSubmit}
+          >
             <div className="w-full mt-10 mb-8 flex flex-col relative">
               <input
                 type="text"
@@ -27,6 +46,8 @@ function Contact() {
                 className="peer placeholder-transparent focus:border-[#FF6464]"
                 placeholder="s"
                 required
+                onChange={(event) => setName(event.target.value)}
+                value={name}
               />
               <label
                 className="absolute left-0 -top-5 text-xs peer-placeholder-shown:text-base peer-placeholder-shown:top-0 transition-all duration-200 cursor-text peer-focus:-top-5 peer-focus:text-xs peer-focus:text-[#FF6464] peer-focus:font-semibold"
@@ -42,6 +63,8 @@ function Contact() {
                 className="peer placeholder-transparent focus:border-[#5185D4]"
                 placeholder="s"
                 required
+                onChange={(event) => setEmail(event.target.value)}
+                value={email}
               />
               <label
                 htmlFor="email"
@@ -57,6 +80,8 @@ function Contact() {
                 className="peer placeholder-transparent focus:border-[#CA56F2]"
                 placeholder="s"
                 required
+                onChange={(event) => setMessage(event.target.value)}
+                value={message}
               />
               <label
                 htmlFor="message"

@@ -102,7 +102,7 @@ function Header() {
       </header>
       <Routes>
         <Route path="/about" element={<About />}></Route>
-        <Route path="/" element={<Navigate to="/about" />}></Route>
+        <Route path="*" element={<Navigate to="/about" />}></Route>
         <Route path="/resume" element={<Resume />}></Route>
         <Route path="/works" element={<Works />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
