@@ -62,13 +62,14 @@ function Works() {
           <div className="content-title-bar"></div>
         </div>
         <div className="grid gap-8 grid-cols-1 md:grid-cols-2">
-          {worksJson.map((work) => {
+          {worksJson.map((work, i) => {
             return (
               <a
                 href={work.urlPath}
                 className="border-dark-bg border-2 rounded-xl p-[24px] work-item relative"
                 target="_blank"
                 rel="noopener noreferrer"
+                key={i}
               >
                 <div className="rounded-lg work-img mb-4">
                   <img

@@ -77,7 +77,7 @@ function Contact() {
               <textarea
                 type="text"
                 id="message"
-                className="peer placeholder-transparent focus:border-[#CA56F2]"
+                className="peer placeholder-transparent focus:border-[#CA56F2] lg:h-auto h-[100px]"
                 placeholder="s"
                 required
                 onChange={(event) => setMessage(event.target.value)}

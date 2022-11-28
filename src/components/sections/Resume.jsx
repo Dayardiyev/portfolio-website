@@ -26,7 +26,7 @@ function Resume() {
                 <h2 className="text-[26px] font-medium pl-[5px]">Education</h2>
               </div>
               <div className="border-dark-bg border-2 rounded-xl p-[24px] flex flex-col gap-5">
-                <p className="text-sm">2021-Present</p>
+                <p className="text-sm">2021 - Present</p>
                 <h3 className="text-xl">
                   Runtime - <span className="text-dark-text">Java</span>
                 </h3>
@@ -45,14 +45,14 @@ function Resume() {
           </div>
         </Animate>
       </div>
-      <div className="bg-[#0d0d0d] lg:rounded-b-2xl py-12 px-20">
+      <div className="bg-[#0d0d0d] lg:rounded-b-2xl py-12 lg:px-20 px-10">
         <Animate>
           <div className="flex items-center">
             <h2 className="text-[26px] font-medium pl-[5px] -translate-x-[5px]">
               Skills
             </h2>
           </div>
-          <div className="grid gap-8 grid-cols-1 md:grid-cols-2 gap-15 font-semibold mt-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 gap-12 font-semibold mt-3">
             <div className="col-span-1">
               <div className="mb-7 grid gap-1">
                 <div className="skill-name">Java</div>

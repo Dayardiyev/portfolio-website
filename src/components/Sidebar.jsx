@@ -10,7 +10,7 @@ function Sidebar() {
         <h1 className="text-3xl bg-dark-bg w-full lg:rounded-t-[20px] py-5 mb-5 text-white">
           Alisher Dayardiyev
         </h1>
-        <h3 className="px-5 py-1 bg-dark-bg inline-block rounded-lg mb-5">
+        <h3 className="px-5 py-1 bg-dark-bg inline-block rounded-lg mb-5 text-dark-text">
           Developer
         </h3>
         <div className="flex justify-center gap-5 mb-5">
@@ -20,7 +20,7 @@ function Sidebar() {
             className="w-[40px] h-[40px] bg-dark-bg rounded-lg flex justify-center items-center > hover:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] transition-all duration-200"
             rel="noreferrer"
           >
-            <FiGithub />
+            <FiGithub/>
           </a>
           <a
             href="https://t.me/dayardiyevv"
@@ -60,13 +60,13 @@ function Sidebar() {
             <div className="flex gap-[10px]">
               <a
                 href="mailto:dayardiev@gmail.com"
-                className="w-[40px] h-[40px] bg-black rounded-lg flex justify-center items-center"
+                className="w-[40px] h-[40px] bg-black rounded-lg flex justify-center items-center flex-shrink-0"
               >
                 <FiMail className="text-[#6AB5B9] text-lg" />
               </a>
               <div className="side-info-text">
                 <p className="text-xs">Mail</p>
-                <a href="tel:+77776032809" className="text-white">
+                <a href="mailto:dayardiev@gmail.com" className="text-white break-all">
                   dayardiev@gmail.com
                 </a>
               </div>
@@ -79,9 +79,7 @@ function Sidebar() {
               </div>
               <div className="side-info-text">
                 <p className="text-xs">Location</p>
-                <a href="tel:+77776032809" className="text-white">
-                  Astana, Kazakhstan
-                </a>
+                <p className="text-white">Astana, Kazakhstan</p>
               </div>
             </div>
           </div>
@@ -92,9 +90,7 @@ function Sidebar() {
               </div>
               <div className="side-info-text">
                 <p className="text-xs">Birthday</p>
-                <a href="tel:+77776032809" className="text-white">
-                  May 22, 2003
-                </a>
+                <p className="text-white">May 22, 2003</p>
               </div>
             </div>
           </div>

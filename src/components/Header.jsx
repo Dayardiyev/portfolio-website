@@ -1,8 +1,8 @@
 import { FaRegUser } from "react-icons/fa";
 import { CgNotes } from "react-icons/cg";
-import { FiCodesandbox } from "react-icons/fi";
+import { FiCodesandbox, FiMenu } from "react-icons/fi";
 import { RiContactsBookLine } from "react-icons/ri";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { MdOutlineClose } from 'react-icons/md';
 
 import { Routes, Route, NavLink, Navigate } from "react-router-dom";
 import About from "./sections/About";
@@ -55,8 +55,8 @@ function Header() {
       </div>
       <header className="lg:hidden h-20 bg-black flex flex-col justify-center relative">
         <div className="w-full px-4 flex justify-end">
-          <div className="burger-menu cursor-pointer" onClick={handleClick}>
-            <GiHamburgerMenu className="text-3xl" />
+          <div className="burger-menu cursor-pointer text-3xl text-white" onClick={handleClick}>
+            {isActive ? <MdOutlineClose /> : <FiMenu />}
           </div>
         </div>
         <nav className={isActive ? "active" : ""}>

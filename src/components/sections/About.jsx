@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 import { BsFillGearFill } from "react-icons/bs";
 import { HiOutlineCode } from "react-icons/hi";
@@ -6,15 +6,16 @@ import Sidebar from "../Sidebar";
 import Animate from "../Animate";
 
 function About() {
-
   useEffect(() => {
-    document.title = 'About - Dayardiyev Alisher'
-  })
+    document.title = "About - Dayardiyev Alisher";
+  });
 
   return (
     <>
-      <div className="block lg:hidden">
-        <Sidebar />
+      <div className="block lg:hidden bg-primary-bg">
+        <Animate>
+          <Sidebar />
+        </Animate>
       </div>
       <div className="bg-primary-bg lg:rounded-2xl md:p-12 p-6">
         <Animate>

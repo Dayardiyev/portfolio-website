@@ -16,6 +16,19 @@
   box-sizing: border-box;
 }
 
+/* ======== Scrollbar ========= */
+
+::-webkit-scrollbar{
+	width: 10px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+	background: rgba(0, 0, 0, 0.5);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius:25px;
+}
+
 
 body {
   margin: 0;
