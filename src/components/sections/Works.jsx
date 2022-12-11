@@ -8,8 +8,8 @@ const worksJson = [
     type: "Landing Page",
     title: "Xbox",
     imgPath: `${require("../../assets/workGifs/xbox.gif")}`,
-    urlPath: "https://dayardiyev.github.io/Xbox/",
-    gitPath: "https://github.com/Dayardiyev/Xbox/",
+    urlPath: "https://dayardiyev.github.io/xbox/",
+    gitPath: "https://github.com/Dayardiyev/xbox/",
   },
   {
     type: "Application",
@@ -23,14 +23,14 @@ const worksJson = [
     title: "Movie API",
     imgPath: `${require("../../assets/workGifs/movie-api.gif")}`,
     urlPath: "https://dayardiyev-movie-api.netlify.app/",
-    gitPath: "https://github.com/Dayardiyev/movie-API-React",
+    gitPath: "https://github.com/Dayardiyev/movie-api-React",
   },
   {
     type: "Online Shop",
     title: "Frost",
     imgPath: `${require("../../assets/workGifs/frostauto.gif")}`,
-    urlPath: "https://dayardiyev.github.io/FrostAuto/",
-    gitPath: "https://github.com/Dayardiyev/FrostAuto/",
+    urlPath: "https://dayardiyev.github.io/frostAuto/",
+    gitPath: "https://github.com/Dayardiyev/frostAuto/",
   },
   {
     type: "Application",
